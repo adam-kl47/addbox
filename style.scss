@@ -1,0 +1,68 @@
+                           /*      --- ZMIENNE ---      */
+  $bg: #1d1e22;          /* background color          */
+  $font: #fff;           /* font color*               */
+  $logo: #c8c2ba;        /* logo color*               */
+
+* {
+    background-color: $bg;
+    color: $font;
+    margin: 0;
+
+    ::-webkit-scrollbar { 
+      display: none; 
+  }
+}
+
+// font-family: 'La Belle Aurore', cursive;
+
+.disable-selection {
+    -webkit-touch-callout: none; /* iOS Safari                           */
+      -webkit-user-select: none; /* Safari                               */
+       -khtml-user-select: none; /* Konqueror HTML                       */
+         -moz-user-select: none; /* Firefox w przeszłości (stare wersje) */
+          -ms-user-select: none; /* Internet Explorer (>=10) / Edge      */
+              user-select: none; /* Aktualnie wspierane przez:           */
+                                 /* Chrome, Opera and Firefox            */
+}
+
+a {
+  color: $font;
+  text-decoration: none;
+}
+
+
+button {
+  display: block;
+  margin: 30px auto;
+  padding: 15px;
+  background-color: rgba(112, 128, 144, 0.6);
+  width: 40%;
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+
+.box-wrapper {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-gap: 10px;
+  width: 80%;
+  height: 80%;
+  margin: 0 10%;
+}
+
+.box {
+  width: 100%;
+  height: 150px;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  text-align: center;
+  line-height: 150px;
+  font-size: 32px;
+}
+
+.even {
+  background: rgba(255, 255, 255, 0.6);
+}
